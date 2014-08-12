@@ -1,4 +1,4 @@
 pt.privatetracker.in
 ====================
 
-http://pt.privatetracker.in
+http://www.privatetracker.in
