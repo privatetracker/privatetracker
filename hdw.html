@@ -1,0 +1,459 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>/* Fonts */
+@font-face{
+  font-family: octicons-anchor;
+  src: url(data:x-font-woff;charset=utf-8;base64,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) format('woff');
+}
+
+/* Body */
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#4d4d4c;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #f8f8f8;
+}
+
+/* Links */
+a{ color: #06d; text-decoration:none; }
+a:hover{ color: #06e; text-decoration: underline; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+::-moz-selection { background:rgba(255,255,0,0.3); color:#000 }
+::selection { background:rgba(255,255,0,0.3); color:#000 }
+
+a::-moz-selection { background:rgba(255,255,0,0.3); color:#0645ad }
+a::selection { background:rgba(255,255,0,0.3); color:#0645ad }
+
+/* Header Anchor Links*/
+a.headeranchor-link {
+  color:#111;
+  border: 0;
+  margin-left: -20px;
+  padding-right: 6px;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+span.headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a.headeranchor-link:hover { text-decoration: none;}
+a.headeranchor-link:visited { color:#4d4d4c; }
+a.headeranchor-link:active { color:#4d4d4c; }
+a.headeranchor-link:hover span.headeranchor:before { content: '\f05c'; }
+h1:hover a span.headeranchor:before { content: '\f05c'; }
+h2:hover a span.headeranchor:before { content: '\f05c'; }
+h3:hover a span.headeranchor:before { content: '\f05c'; }
+h4:hover a span.headeranchor:before { content: '\f05c'; }
+h5:hover a span.headeranchor:before { content: '\f05c'; }
+h6:hover a span.headeranchor:before { content: '\f05c'; }
+
+/* Paragraphs */
+p { margin:1em 0; }
+
+/* Images */
+img {
+  max-width:100%;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* Headers */
+h1,h2,h3,h4,h5,h6 {
+  font-weight:normal;
+  color:#111;
+  line-height: 1.7;
+  position: relative;
+}
+h4,h5,h6{ font-weight: bold; }
+h1 { font-size:2.5em; border-bottom: 1px solid #ddd;}
+h2 { font-size:2em; border-bottom:1px solid #eee; padding-bottom: 5px; }
+h3 { font-size:1.5em; }
+h4 { font-size:1.2em; }
+h5 { font-size:1em; }
+h6 { font-size:0.9em; }
+
+/* Block Quotes */
+blockquote {
+  color:#666666;
+  margin:0;
+  padding-left: 3em;
+  border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+/* Raw Blocks */
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+pre, code, kbd, samp {
+  color: #000;
+  font-family: monospace;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 0.88em;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 10px;
+}
+
+pre code { border: 0 }
+
+code { padding: 0 3px 0 3px; }
+
+/* Multimarkdown Critic Blocks */
+span.critic_mark { background: #ff0; }
+span.critic_delete { color: #c82829; text-decoration: line-through; }
+span.critic_insert { color: #718c00 ; text-decoration: underline; }
+span.critic_comment { color: #8e908c; font-style: italic; }
+
+/* Inlines */
+b, strong { font-weight: bold; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+dfn { font-style: italic; }
+
+/* Lists */
+ul, ol { margin: 0.5em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+li.task-list-item { list-style-type: none; margin-left: -1.5em; }
+li.task-list-item input { margin-right: .5em; }
+li.task-list-item ul, li.task-list-item ol { margin-left: 1.5em; }
+dd { margin: 0 0 0 2em; }
+
+/* Tables */
+table { border-collapse: collapse; border: 1px solid #ddd; }
+table tr:nth-child(2n) { background-color: #f8f8f8; }
+td, th { border: 1px solid #ddd; padding: 6px 13px; }
+
+/* Codehilite Tables */
+table.codehilitetable { border: 0; border-spacing: 0; width: 100%; }
+td.linenos, td.code, table.codehilitetable td { border: 0; padding: 0; }
+table.codehilitetable td:not(.linenos) div.linenodiv { padding: 0 !important; }
+td.code { width: 100%; }
+table.codehilitetable td.linenos div pre, td div.linenodiv pre {
+  border: 0;
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+table.codehilitetable td.code div pre {
+  border: 0;
+  border-top: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  body{ font-size:14px; }
+}
+
+@media only screen and (min-width: 768px) {
+  body{ font-size:16px; }
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{ font-size:12pt; max-width:100%; outline:none; border: 0;}
+  a, a:visited { text-decoration: underline; }
+  a.headeranchor-link { display: none; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+.toc {
+  position: fixed;
+  font-size: 14px;
+  top: 0px;
+  left: -330px;
+  width: 270px;
+  height: 100%;
+  overflow: -y: scroll;
+  padding: 0 0 0 100px;
+  box-shadow: 1px 0 3px rgba(0,0,0,0.25);
+  transition: all .66s ease-in-out;
+  opacity: .4;
+}
+.toc:hover {
+  left: -120px;
+  transition: all .2s ease-in-out;
+  opacity: .8;
+}
+.toc:before {
+  content: '目录';
+  padding-right: 4px;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+.toc:hover:before {
+  display: none;
+}
+.toc ul {
+  list-style-type: none;
+}
+
+img {
+  margin: 10px;
+  box-shadow: 2px 2px 10px;
+}</style><title>hdw</title></head><body><div class="toc">
+<ul>
+<li><a href="#hdwing">HDWinG 简介</a><ul>
+<li><a href="#_1">名称</a></li>
+<li><a href="#_2">站点地址</a></li>
+<li><a href="#logo">LOGO</a></li>
+<li><a href="#_3">状态统计</a></li>
+<li><a href="#_4">最新公告</a></li>
+<li><a href="#_5">最初公告</a></li>
+<li><a href="#_6">站点介绍</a></li>
+<li><a href="#_7">注册方式</a></li>
+<li><a href="#_8">邀请获得方式</a></li>
+<li><a href="#_9">种子类型</a></li>
+<li><a href="#_10">官方制作组</a></li>
+<li><a href="#_11">豪门夜宴</a></li>
+<li><a href="#_12">网站界面</a></li>
+<li><a href="#_13">用户等级</a></li>
+<li><a href="#_14">网站通则</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="hdwing"><a name="user-content-hdwing" href="#hdwing" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>HDWinG 简介</h1>
+<blockquote>
+<p>本文由微信公众号「PT风向标」 原创，遵循<a href="http://www.creativecommons.org/licenses/by-nc/3.0/cn/legalcode">署名-非商业性使用(by-na)协议</a>发布。<br />
+亦即：转载请注明出处，勿作商业用途。<br />
+文中如有疏漏或谬误，欢迎大家留言指出，非常感谢。<br />
+本文格式参考了hd2pt的<a href="http://www.gebi1.com/forum-129-1.html">PT封神榜</a>，特此鸣谢。</p>
+</blockquote>
+<h2 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>名称</h2>
+<p>简称： HDW<br />
+全称： HDWinG<br />
+昵称： 海盗湾（官方） | 鸡翅膀（民间）</p>
+<h2 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>站点地址</h2>
+<p><a href="http://hdwing.com">http://hdwing.com</a></p>
+<h2 id="logo"><a name="user-content-logo" href="#logo" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>LOGO</h2>
+<p><img alt="HDW LOGO" src="http://pic-share.qiniudn.com/logo-hdw.png" /><br />
+或<br />
+<img alt="HDW LOGO BEFORE" src="http://pic-share.qiniudn.com/pthdw-logo.png" /></p>
+<h2 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>状态统计</h2>
+<p><img alt="HDW STATUS" src="http://pic-share.qiniudn.com/logo-status.png" /></p>
+<h2 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>最新公告</h2>
+<blockquote>
+<p>2014-08-06<br />
+邀请系统开放通知<br />
+HDWinG目前已经稳定运行，管理组决定于2014/08/10~2014/09/01开放邀请系统（发放邀请最低等级为大腕），以吸收更多优秀高质会员。为感谢大家一直以来对HDWinG的厚爱，邀请将由10w一个下降至5w一个，并且网站将向以下级别会员发放限时邀请，限时邀请发放将于开放邀请系统之前完成，邀请系统关闭后没有发放的限时邀请将被回收。<br />
+编剧、导演：每人2枚<br />
+制片人及以上等级：每人3枚<br />
+在8/09日~09/01日期间注册的会员，新手考核标准如下：<br />
+40GB上传<br />
+40GB下载<br />
+5000做种积分<br />
+您可以通过积分兑换上传量，并不影响您的最终做种积分统计。<br />
+无法通过新手考核将导致账号被删除，请悉知！<br />
+在此期间，管理组将严厉打击贩卖邀请，一人多号等违规行为，情节严重将导致相关账号被禁用，绝不姑息。<br />
+请勿以身试法。也请慎重对待自己的邀请权利，勿发给不值得信任的人。<br />
+        HDWinG管理组</p>
+</blockquote>
+<h2 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>最初公告</h2>
+<blockquote>
+<p>2013-03-18<br />
+HDWing是一家全新的高清PT分享网站，旨在为用户提供专业的高清体验与分享，通过HDWING的规则和平台，不仅可以分享及获取全新的高清影音资源，同时开拓自身的高清体验与知识，通过结识高清资源结识同好，让我们共同建立一个高清的，和谐的新环境。<br />
+同时HDWing海盗湾网站为原HDChina网站会员提供原有平台和相关数据，对HDChina各级别用户优先对待，以此获得更多真正的高清爱好者平等交流。<br />
+HDWing海盗湾不是简单的影视论坛，也永远不会从事片源拷贝业务，我们是通过不断完善自身体系与规则建设，逐步建立起真正意义的高清群体，只保留专业用户，不符合网站的用户将被分级淘汰，用户必须通过逐步学习与晋级方可逐渐适应HDWing海盗湾，让我们共建专业的中文的高清世界。<br />
+特此鸣谢HDChina所有管理员</p>
+</blockquote>
+<h2 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>站点介绍</h2>
+<p>HDW的前身是HDChina，曾经是中国PT界的老大哥。2012年年底HDC屡出事故，先是爆出管理员90day买卖邀请码，被永久驱逐；而后坊间传闻90day誓不罢休，定要举报HDC至死。2013年1月某天（具体日期记不清了，恳请知情者补充）HDC毫无预警地挂掉了，且一挂就是3个月。其官方给出的说法是服务器硬盘故障，拿去送修，但保证用户及种子数据仍在。<br />
+但坊间<a href="http://tieba.baidu.com/p/2172700242">有人</a>认为此说法为官方的障眼法，实为解决高层的利益纠葛问题。<br />
+2013年3月，HDC改头换面，以HDWinG的身份重出江湖，以往HDC内站的账户可直接凭帐号密码登录。然而，坊间亦有人认为此HDW非彼HDC，<a href="http://tieba.baidu.com/p/2228331818">HDChina其实早已死了</a>。</p>
+<h2 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>注册方式</h2>
+<p>邀请注册，平时关闭邀请系统，当前开放（08.10~09.01）。</p>
+<h2 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>邀请获得方式</h2>
+<p>会员通过积分兑换，平时10w积分/个，活动时常下降到5w。<br />
+或通过<a href="http://hdwing.com/donate.php">官方捐赠页面</a>捐赠￥100直接获得邀请码。<br />
+邀请获取难度：★★★</p>
+<h2 id="_9"><a name="user-content-_9" href="#_9" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>种子类型</h2>
+<p><img alt="torrent" src="http://pic-share.qiniudn.com/pttorrent.jpg" /></p>
+<h2 id="_10"><a name="user-content-_10" href="#_10" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>官方制作组</h2>
+<p>HDWinG | HDWTV | iHD<br />
+此外，韩剧小组KiSHD也常在HDW发布种子。<br />
+HDChina曾拥有著名制作组Wiki，后来Wiki随灰哥转入TTG。</p>
+<h2 id="_11"><a name="user-content-_11" href="#_11" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>豪门夜宴</h2>
+<p>HDW内站论坛里有一个叫「豪门夜宴」的版块，制片人等级及以上方可入内，里面聚集了一大帮活跃的高清发烧友，更有邀请发送交流帖，经常有不错的国外站邀请发送。</p>
+<h2 id="_12"><a name="user-content-_12" href="#_12" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>网站界面</h2>
+<p><img alt="hdw" src="http://pic-share.qiniudn.com/pthdw.jpg" /><br />
+<em>新标签页打开图片可查看大图</em></p>
+<h2 id="_13"><a name="user-content-_13" href="#_13" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>用户等级</h2>
+<table>
+<thead>
+<tr>
+<th>等级</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>群众演员</td>
+<td>一般会员，当用户分享率达到一定比率，自动升级为高级用户。</td>
+</tr>
+<tr>
+<td>配角</td>
+<td>注册满 4 周，上传大于 25G，分享率大于 1.05，小于 0.95 会降级。</td>
+</tr>
+<tr>
+<td>演员</td>
+<td>注册满 8 周，上传大于 100G，分享率大于 1.2，小于 1.1 会降级。</td>
+</tr>
+<tr>
+<td>大腕</td>
+<td>注册满 16 周，上传大于 500G，下载大于 50G，分享率大于 1.2，小于 1.1 会降级至配角。</td>
+</tr>
+<tr>
+<td>编剧</td>
+<td>注册满 24 周，上传大于 1T，下载大于 200G，分享率大于 1.2，小于 1.1 会降级。拥有直接上传种子的权利。</td>
+</tr>
+<tr>
+<td>导演</td>
+<td>注册满 24 周，上传大于 5T，下载大于 500G，分享率大于 1.2，小于 1.1 会降级至配角。享有编剧权利，同时帐号将变色已示区分。</td>
+</tr>
+<tr>
+<td>制片人</td>
+<td>注册满 24 周，上传大于 10T，下载大于 500G，分享率大于 1.2，小于 1.1 会降级。享有导演权利，不再受六周未登录BAN号规则约束。</td>
+</tr>
+<tr>
+<td>影业集团</td>
+<td>注册满 24 周，上传大于 30T，下载大于 500G，分享率大于 1.2，小于 1.1 会降级至配角。享有制片人权利，能够查看排行榜，同时免除所有考核。</td>
+</tr>
+<tr>
+<td>影业联合</td>
+<td>注册满 24 周，上传大于 60 T，下载大于 1 T，分享率大于 1.2，小于 1.1 会降级。享有影业集团权利，将开放更多功能。</td>
+</tr>
+<tr>
+<td>影业局</td>
+<td>注册满 24 周，上传大于 100 T，下载大于 1 T，分享率大于 1.2，小于 1.1 会降级。享有影业联合权利，将开放更多功能。</td>
+</tr>
+<tr>
+<td>传媒司</td>
+<td>注册满 24 周，上传大于 300 T，下载大于 1 T，分享率大于 1.2，小于 1.1 会降级。享有影业局权利，将开放更多功能。</td>
+</tr>
+<tr>
+<td>传媒部</td>
+<td>注册满 24 周，上传大于 500 T，下载大于 1 T，分享率大于 1.2，小于 1.1 会降级。享有传媒司权利，将开放更多功能。</td>
+</tr>
+<tr>
+<td>VIP</td>
+<td>捐赠人和广告支持，合作商家等。</td>
+</tr>
+<tr>
+<td>荣誉会员</td>
+<td>为HDWinG做出特殊贡献的用户。</td>
+</tr>
+<tr>
+<td>Uploader</td>
+<td>可以上传种子的会员，属于高级别会员。</td>
+</tr>
+<tr>
+<td>Encoder</td>
+<td>工作小组成员。</td>
+</tr>
+<tr>
+<td>Helper</td>
+<td>网站协助管理员，处理一些日常事务。</td>
+</tr>
+<tr>
+<td>Forum Moderator</td>
+<td>论坛版主。</td>
+</tr>
+<tr>
+<td>Moderator</td>
+<td>总版主。</td>
+</tr>
+<tr>
+<td>Administrator</td>
+<td>管理员。</td>
+</tr>
+<tr>
+<td>SysOP</td>
+<td>网站法官，有调整任何内容的权利。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_14"><a name="user-content-_14" href="#_14" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>网站通则</h2>
+<blockquote>
+<p><strong>所有会员请认真阅读本通则，如违反以下规则账号将收到警告甚至直接被封禁!</strong><br />
+不要挑战管理员的权威！<br />
+任何形式的作弊行为都会直接封禁！<br />
+一人同时有多个HDWinG账号的，所有账号都会直接被封禁！<br />
+不要上传我们的种子文件到其他下载站点！（详细说明可参见“常见问题”）<br />
+任何在论坛中或服务器中的破坏性行为，将直接产生一个严重警告。<br />
+未经许可，转发HDWinG独占资源，第一次严重警告，并限时删除转发资源，如拒绝整改账号将立刻被封禁，不接受申诉！<br />
+任何会员终生将只得到一个警告！再有违规行为，您将会直接告别HDWinG！HDWinG禁止任何形式的帐号交易行为！我们将彻查类似商业行为的相关ID和被邀请人,同时将永久封闭出售者的ID及IP范围！</p>
+</blockquote></body></html>
